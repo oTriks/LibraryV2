@@ -1,14 +1,18 @@
 import java.util.ArrayList;
 
+// this class creates a library of books from Book class and contains methods
 public class Library {
 
 
     private ArrayList<Book> library = new ArrayList<>();
 
+
+    // adds book to library
     public void addBook(Book book) {
         library.add(book);
     }
 
+    //   finds book by name and returns a string with book information
     public String findBookByName(String name) {
         for (Book book : library) {
             if (book.getName().equals(name)) {
@@ -18,6 +22,8 @@ public class Library {
         return ("Boken hittades inte");
     }
 
+
+    // return string with information about available books
     public String availableBooks() {
         String returnMessage = "";
         for (Book book : library) {
@@ -31,7 +37,7 @@ public class Library {
 
 
 
-
+// finds book based by name and returns book object if found
     public Book findBook(String name) {
         for (Book book : library) {
             if (book.getName().equals(name)) {
