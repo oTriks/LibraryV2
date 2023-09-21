@@ -37,9 +37,9 @@ public class Book {
     }
 
     public void changeAvailable() {         //behöver inte använda denna då vi gjorde den i loan samt returnBook automatiskt
-        if(available) {   //betyder sant
+        if (available) {   //betyder sant
             this.available = false;
-        } else{
+        } else {
             this.available = true;
         }
     }

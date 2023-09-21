@@ -6,6 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int choice;
 
+
         Library library = new Library();
 
         Book book1 = new Book("golf", "kajsa", 2000, 1.2);

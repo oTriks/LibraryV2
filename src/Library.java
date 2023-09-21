@@ -28,16 +28,17 @@ public class Library {
         String returnMessage = "";
         for (Book book : library) {
             if (book.isAvailable()) {
-            returnMessage += book.toString() + "\n";
+                returnMessage += book.toString() + "\n";
             }
-        } if (returnMessage.equals("")) {
-        returnMessage = "Inga böcker är tillgängliga";
-        } return returnMessage;
+        }
+        if (returnMessage.equals("")) {
+            returnMessage = "Inga böcker är tillgängliga";
+        }
+        return returnMessage;
     }
 
 
-
-// finds book based by name and returns book object if found
+    // finds book based by name and returns book object if found
     public Book findBook(String name) {
         for (Book book : library) {
             if (book.getName().equals(name)) {
@@ -48,7 +49,7 @@ public class Library {
     }
 
 
-    }
+}
 
 
 
